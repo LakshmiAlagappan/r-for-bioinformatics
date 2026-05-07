@@ -10,8 +10,9 @@ This is a collection of R exercises designed for beginners moving towards bioinf
 
 ### Beginner R
 
-- [Exercise 1 — Vectors (Practice)](r-for-bioinformatics/01_Exercise_1.md)
-- [Exercise 1 — Vectors (Solutions)](r-for-bioinformatics/01_Exercise_solution.md)
+- [Exercise 1 — Vectors (Practice)](r-for-bioinformatics/01_vectors.md)
+- [Exercise 2 — Dataframes (Practice)](r-for-bioinformatics/02_dataframes.md)
+- [Exercise 3 — Mini GEX Analysis (Practice)](r-for-bioinformatics/03_mini_gex_analysis.md)
 
 ---
 
@@ -20,7 +21,7 @@ This is a collection of R exercises designed for beginners moving towards bioinf
 These exercises are designed to build intuition in:
 
 - basic R syntax
-- vectors and indexing
+- vectors, indexing, dataframes, gex
 - simple data manipulation
 - filtering and logical conditions
 - preparing for bulk RNA-seq analysis
@@ -30,17 +31,8 @@ These exercises are designed to build intuition in:
 ## ⚠️ How to use this repo
 
 1. Start with the **practice file**
-2. Try solving without looking at solutions
-3. Check solutions only after completing
-4. Repeat until comfortable
+2. Try solving without looking at solutions or using ChatGPT extensively
+3. Have fun 
 
 ---
 
-## 🚀 Next steps (coming soon)
-
-- Data frames and metadata
-- Basic plotting (ggplot2)
-- Introduction to gene expression matrices
-- RNA-seq workflow basics
-
----
