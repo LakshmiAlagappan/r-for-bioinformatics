@@ -392,3 +392,7 @@ is_high
 Sort the expression vector from:
 - lowest to highest
 - highest to lowest
+
+---
+
+🏠 [Home](../index) | ➡️ [Next Exercise](../basics/02_dataframes)
