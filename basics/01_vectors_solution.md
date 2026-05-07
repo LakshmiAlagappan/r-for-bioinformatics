@@ -1,7 +1,5 @@
 ---
 
-# Optional Full Solution
-
 Try completing the exercise before looking at the solution.
 
 ```r
