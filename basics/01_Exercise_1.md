@@ -20,23 +20,6 @@ This exercise is intentionally detailed and designed to take approximately **45â
 
 ---
 
-# Learning Objectives
-
-By the end of this exercise, you should be able to:
-
-- Create vectors in R
-- Store numerical and character data
-- Use arithmetic operators
-- Use basic R functions
-- Filter vectors using logical conditions
-- Access specific elements
-- Compare values
-- Create simple summaries
-- Combine vectors together
-- Begin thinking about biological interpretation
-
----
-
 # Part 1 â€” Creating Numerical Vectors
 
 In RNA-seq analysis, each sample may contain an expression value for a gene.
@@ -51,12 +34,6 @@ Suppose the expression values for a gene across 8 samples are:
 
 Create a vector called `expression`.
 
-Hint:
-
-```r
-my_vector <- c(1, 2, 3)
-```
-
 ---
 
 ## Task 1.2
@@ -67,15 +44,7 @@ Print the vector to the console.
 
 ## Task 1.3
 
-Use the following functions on the vector:
-
-```r
-mean()
-max()
-min()
-length()
-sum()
-```
+Use functions on the vector to answer the following:
 
 Questions:
 1. What is the mean expression value?
@@ -102,20 +71,6 @@ Print:
 - the first value
 - the third value
 - the last value
-
-Hints:
-
-```r
-expression[1]
-
-expression[3]
-```
-
-For the last value:
-
-```r
-expression[length(expression)]
-```
 
 ---
 
@@ -198,12 +153,6 @@ We often:
 
 Find all expression values greater than 10.
 
-Hint:
-
-```r
-expression[expression > 10]
-```
-
 ---
 
 ## Task 4.2
@@ -225,12 +174,6 @@ Find all values:
 Count:
 - how many values are above 15
 - how many values are below 10
-
-Hint:
-
-```r
-length(...)
-```
 
 ---
 
@@ -301,12 +244,6 @@ Suppose each expression value corresponds to a gene:
 Print:
 - genes with expression greater than 15
 
-Hint:
-
-```r
-genes[expression > 15]
-```
-
 ---
 
 ## Task 6.2
@@ -351,12 +288,6 @@ Print the vector.
 Retrieve the expression value for:
 - TP53
 - BRCA1
-
-Hint:
-
-```r
-expression["TP53"]
-```
 
 ---
 
@@ -432,12 +363,6 @@ Questions:
 1. How many samples belong to Treatment?
 2. How many belong to Control?
 
-Hint:
-
-```r
-treatment_group == "Treatment"
-```
-
 ---
 
 # Bonus Challenge 2
@@ -463,11 +388,3 @@ is_high
 Sort the expression vector from:
 - lowest to highest
 - highest to lowest
-
-Hints:
-
-```r
-sort(expression)
-
-sort(expression, decreasing = TRUE)
-```
