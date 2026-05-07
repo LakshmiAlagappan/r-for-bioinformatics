@@ -1,3 +1,7 @@
+---
+title: "Exercise 1 - Vectors"
+---
+
 # Exercise 1 — Introduction to R for Gene Expression Analysis
 
 Welcome to your first R exercise.
