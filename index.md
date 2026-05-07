@@ -10,8 +10,8 @@ This is a collection of R exercises designed for beginners moving towards bioinf
 
 ### Beginner R
 
-- [Exercise 1 — Vectors (Practice)](beginner/01_Exercise_1.md)
-- [Exercise 1 — Vectors (Solutions)](beginner/01_Exercise_solution.md)
+- [Exercise 1 — Vectors (Practice)](r-for-bioinformatics/01_Exercise_1.md)
+- [Exercise 1 — Vectors (Solutions)](r-for-bioinformatics/01_Exercise_solution.md)
 
 ---
 
