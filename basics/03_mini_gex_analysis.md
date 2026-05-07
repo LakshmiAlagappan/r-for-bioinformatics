@@ -1,3 +1,7 @@
+---
+title: "Exercise 3 - GEX"
+---
+
 # Exercise 3 — Mini Gene Expression Analysis (Vectors + Data Frames)
 
 In real RNA-seq analysis, we rarely work with a single gene or a simple vector.
