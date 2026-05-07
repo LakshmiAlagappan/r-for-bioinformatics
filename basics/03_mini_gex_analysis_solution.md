@@ -1,3 +1,7 @@
+---
+title: "Exercise 3 - GEX - Solutions"
+---
+
 # Exercise 3 — Solutions: Mini Gene Expression Analysis
 
 ---
