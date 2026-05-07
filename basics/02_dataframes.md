@@ -197,3 +197,6 @@ Add a new column:
 ```r
 expression_scaled = expression / max(expression)
 ```
+---
+
+⬅️ [Previous Exercise](../basics/01_vectors) | 🏠 [Home](../index) | ➡️ [Next Exercise](../basics/03_mini_gex_analysis)
