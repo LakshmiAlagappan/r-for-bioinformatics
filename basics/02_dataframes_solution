@@ -1,0 +1,157 @@
+# Exercise 2 — Solutions: Data Frames and Sample Metadata
+
+---
+
+# Part 1 — Creating a Data Frame
+
+```r
+sample_id <- c("S1","S2","S3","S4","S5","S6","S7","S8")
+
+expression <- c(12.4, 15.1, 8.7, 20.3, 17.8, 5.2, 13.5, 18.1)
+
+condition <- c("Control","Control","Control","Treatment",
+               "Treatment","Treatment","Control","Treatment")
+
+df <- data.frame(sample_id, expression, condition)
+```
+
+---
+
+# Part 2 — Inspecting the Data
+
+```r
+str(df)
+head(df)
+dim(df)
+summary(df)
+```
+
+### Answers:
+- Rows: 8
+- Columns: 3
+- Types:
+  - sample_id → character
+  - expression → numeric
+  - condition → character/factor (depending on R version)
+
+---
+
+# Part 3 — Accessing Columns
+
+```r
+df$expression
+df[["expression"]]
+df$condition
+```
+
+```r
+df[, c("sample_id", "expression")]
+```
+
+---
+
+# Part 4 — Filtering Data
+
+```r
+df[df$expression > 15, ]
+```
+
+```r
+df[df$condition == "Treatment", ]
+```
+
+```r
+df[df$condition == "Control" & df$expression < 10, ]
+```
+
+---
+
+### Counts
+
+```r
+sum(df$condition == "Control")
+sum(df$condition == "Treatment")
+```
+
+---
+
+# Part 5 — Adding New Columns
+
+```r
+df$high_expression <- df$expression > 15
+```
+
+```r
+df$log_expression <- log2(df$expression)
+```
+
+```r
+df
+```
+
+---
+
+# Part 6 — Summarising Data
+
+```r
+mean(df$expression[df$condition == "Control"])
+mean(df$expression[df$condition == "Treatment"])
+```
+
+### Interpretation:
+- Treatment group has higher mean expression
+
+---
+
+```r
+tapply(df$expression, df$condition, max)
+tapply(df$expression, df$condition, min)
+```
+
+---
+
+# Part 7 — Interpretation (comments)
+
+```r
+# 1. Treatment samples generally show higher expression
+# (based on mean comparison)
+
+# 2. High expression indicates stronger gene activity in samples
+
+# 3. Log transformation reduces skew and makes distributions more comparable
+```
+
+---
+
+# Bonus
+
+## B1 — Sort by expression
+
+```r
+df[order(df$expression, decreasing = TRUE), ]
+```
+
+---
+
+## B2 — Treatment subset
+
+```r
+df[df$condition == "Treatment", ]
+```
+
+---
+
+## B3 — Scaled expression
+
+```r
+df$expression_scaled <- df$expression / max(df$expression)
+```
+
+---
+
+# Key Takeaways
+
+- data frames store structured biological data
+- filtering is core to RNA-seq analysis
+- grouping enables biological comparison
+- transformations prepare data for modelling
