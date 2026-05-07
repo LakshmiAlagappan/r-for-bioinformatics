@@ -1,4 +1,6 @@
 ---
+title: "Exercise 1 - Vectors - Solutions"
+---
 
 Try completing the exercise before looking at the solution.
 
