@@ -1,3 +1,7 @@
+---
+title: "Exercise 2 - Dataframes"
+---
+
 # Exercise 2 — Introduction to Data Frames and Sample Metadata
 
 In real bioinformatics workflows (especially RNA-seq), data is rarely stored as simple vectors.
